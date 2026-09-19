@@ -1,0 +1,60 @@
+======================================================================
+      K4-L3A BENCHMARK RUNNER — NHÓM G41 (THƯ VIỆN ĐH BÁCH KHOA)
+======================================================================
+[*] Đã nạp và chia nhỏ 35 chunks từ thư mục data/university
+[*] Embedding backend: gemini-embedding-001
+[*] Đã index 35 chunks vào EmbeddingStore
+
+----------------------------------------------------------------------
+              KẾT QUẢ TRUY XUẤT 5 CÂU HỎI ĐÁNH GIÁ
+----------------------------------------------------------------------
+
+[Câu 1]: Sinh viên hệ chính quy được mượn tối đa bao nhiêu cuốn sách và trong thời gian bao lâu?
+   Điểm Top-1 Score: 0.8583 | Nguồn: hcmut-lib-borrowing-student.md
+   Trích đoạn Top-1: # Quy định mượn trả tài liệu dành cho sinh viên chính quy  ## 1. Đối tượng áp dụng Quy định này áp dụng cho toàn bộ sinh viên đại học hệ chính quy thu...
+   Đáp án chuẩn (Gold): Sinh viên chính quy được mượn tối đa 05 cuốn tài liệu trong cùng một thời điểm; thời hạn mượn là 21 ngày (3 tuần) cho sách kho mở từ C2 trở đi.
+   Top-3 chunks được xếp hạng:
+     1. [score=0.8583] hcmut-lib-borrowing-student.md -> "# Quy định mượn trả tài liệu dành cho sinh viên chính quy  ## 1. Đối tượng áp dụ..."
+     2. [score=0.8349] hcmut-lib-borrowing-student.md -> "## 2. Số lượng và thời hạn mượn - **Số lượng mượn tối đa:** 05 cuốn tài liệu tro..."
+     3. [score=0.8052] hcmut-lib-borrowing-faculty.md -> "## 2. Đặc quyền mượn tài liệu phục vụ giảng dạy và nghiên cứu - **Số lượng mượn ..."
+
+[Câu 2]: Mức phạt trễ hạn mượn sách mỗi ngày là bao nhiêu tiền và nếu làm mất sách thì xử lý như thế nào?
+   Điểm Top-1 Score: 0.8701 | Nguồn: hcmut-lib-policy-adjustment.md
+   Trích đoạn Top-1: ## 1. Mức phí xử phạt trễ hạn mượn sách - Bạn đọc trả sách quá thời hạn quy định sẽ phải nộp phí phạt trễ hạn là **5.000 VNĐ / cuốn / ngày trễ**. - Ti...
+   Đáp án chuẩn (Gold): Phí phạt trễ hạn là 5.000 VNĐ / cuốn / ngày trễ. Nếu làm mất sách, bồi thường sách mới tương đương + 20.000 VNĐ phí xử lý, hoặc bồi thường 100% giá bìa + 100.000 VNĐ phí xử lý kỹ thuật.
+   Top-3 chunks được xếp hạng:
+     1. [score=0.8701] hcmut-lib-policy-adjustment.md -> "## 1. Mức phí xử phạt trễ hạn mượn sách - Bạn đọc trả sách quá thời hạn quy định..."
+     2. [score=0.8182] hcmut-lib-policy-adjustment.md -> "# Thông báo điều chỉnh chính sách xử lý quá hạn và bồi thường tài liệu..."
+     3. [score=0.8090] hcmut-lib-policy-adjustment.md -> "## 2. Quy định xử lý khi làm mất tài liệu Khi làm mất sách hoặc tài liệu mượn từ..."
+
+[Câu 3]: Điều kiện để tài khoản của sinh viên được kích hoạt quyền mượn tài liệu thư viện về nhà là gì?
+   Bộ lọc (Filter): {'audience': 'student'}
+   Điểm Top-1 Score: 0.8089 | Nguồn: hcmut-lib-borrowing-student.md
+   Trích đoạn Top-1: ## 4. Điều kiện mượn sách - Xuất trình thẻ sinh viên hợp lệ hoặc thẻ thư viện tích hợp mã vạch. - Sinh viên phải hoàn thành khóa học tập huấn hướng dẫ...
+   Đáp án chuẩn (Gold): Sinh viên phải xuất trình thẻ sinh viên hợp lệ và hoàn thành khóa học tập huấn thư viện đầu khóa với điểm bài kiểm tra trắc nghiệm từ 80% trở lên.
+   Top-3 chunks được xếp hạng:
+     1. [score=0.8089] hcmut-lib-borrowing-student.md -> "## 4. Điều kiện mượn sách - Xuất trình thẻ sinh viên hợp lệ hoặc thẻ thư viện tí..."
+     2. [score=0.7738] hcmut-lib-borrowing-student.md -> "# Quy định mượn trả tài liệu dành cho sinh viên chính quy  ## 1. Đối tượng áp dụ..."
+     3. [score=0.7687] hcmut-lib-information-training.md -> "- **Điều kiện hoàn thành:** Sinh viên phải làm bài kiểm tra trắc nghiệm cuối khó..."
+
+[Câu 4]: Đặc quyền về số lượng sách và quyền truy cập cơ sở dữ liệu quốc tế của giảng viên và nghiên cứu sinh là gì?
+   Điểm Top-1 Score: 0.7925 | Nguồn: hcmut-lib-borrowing-faculty.md
+   Trích đoạn Top-1: ## 2. Đặc quyền mượn tài liệu phục vụ giảng dạy và nghiên cứu - **Số lượng mượn tối đa:** 05 cuốn tài liệu trong một lượt mượn tiêu chuẩn. Đối với giả...
+   Đáp án chuẩn (Gold): Giảng viên được mượn 05 cuốn tiêu chuẩn (tối đa 10 cuốn khi có đề tài nghiên cứu); được cấp quyền truy cập từ xa vào các CSDL quốc tế (IEEE Xplore, ScienceDirect, Scopus) và sử dụng phòng nghiên cứu riêng.
+   Top-3 chunks được xếp hạng:
+     1. [score=0.7925] hcmut-lib-borrowing-faculty.md -> "## 2. Đặc quyền mượn tài liệu phục vụ giảng dạy và nghiên cứu - **Số lượng mượn ..."
+     2. [score=0.7736] hcmut-lib-borrowing-faculty.md -> "- **Truy cập cơ sở dữ liệu quốc tế:** Giảng viên và nghiên cứu sinh được cấp tài..."
+     3. [score=0.7490] hcmut-lib-borrowing-faculty.md -> "# Quy định mượn tài liệu dành cho giảng viên và nghiên cứu sinh  ## 1. Đối tượng..."
+
+[Câu 5]: Quy định về việc sao chụp (photocopy) tài liệu trong thư viện cho phép tối đa bao nhiêu phần trăm cuốn sách?
+   Điểm Top-1 Score: 0.8501 | Nguồn: hcmut-lib-document-delivery.md
+   Trích đoạn Top-1: - **Tuân thủ luật sở hữu trí tuệ:** Bạn đọc chỉ được phép sao chụp tài liệu phục vụ mục đích cá nhân với dung lượng không vượt quá **20% tổng số trang...
+   Đáp án chuẩn (Gold): Bạn đọc chỉ được phép sao chụp phục vụ cá nhân không quá 20% tổng số trang của một cuốn sách hoặc không quá 01 chương sách; nghiêm cấm sao chép nguyên cuốn giáo trình.
+   Top-3 chunks được xếp hạng:
+     1. [score=0.8501] hcmut-lib-document-delivery.md -> "- **Tuân thủ luật sở hữu trí tuệ:** Bạn đọc chỉ được phép sao chụp tài liệu phục..."
+     2. [score=0.8043] hcmut-lib-document-delivery.md -> "## 1. Dịch vụ sao chụp tài liệu (Photocopy / Scan) - Nhằm phục vụ nhu cầu học tậ..."
+     3. [score=0.7558] hcmut-lib-document-delivery.md -> "# Dịch vụ sao chụp và cung cấp thông tin, tài liệu theo yêu cầu..."
+
+======================================================================
+               HOÀN TẤT ĐÁNH GIÁ BENCHMARK
+======================================================================

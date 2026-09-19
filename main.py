@@ -65,6 +65,11 @@ def demo_llm(prompt: str) -> str:
 
 
 def run_manual_demo(question: str | None = None, sample_files: list[str] | None = None) -> int:
+    if hasattr(sys.stdout, "reconfigure") and sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+        sys.stdout.reconfigure(encoding="utf-8")
+    if hasattr(sys.stderr, "reconfigure") and sys.stderr.encoding and sys.stderr.encoding.lower() != "utf-8":
+        sys.stderr.reconfigure(encoding="utf-8")
+
     files = sample_files or SAMPLE_FILES
     query = question or "Summarize the key information from the loaded files."
 
